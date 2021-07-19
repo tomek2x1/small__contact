@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+.mwc {
+  width: 1200px;
+  margin: 0 auto;
+  min-height:700px;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mwc__container {
+  background-color: #efefef;
+  flex-basis: 50%;
+  padding: 15px 20px;
+}
+
+.mwc__title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* styling POS  */
+.pos__accordion {
+  width: 100%;
+  padding: 5px 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.pos__arrow {
+  transition: transform 0.2s;
+}
+
+.pos__accordion.pos__active .pos__arrow {
+  transform: rotate(180deg);
+}
+
+.pos__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pos__data {
+  display: flex;
+  align-items: center;
+}
+
+.pos__pin {
+  margin-right: 10px;
+  height:30px;
+}
+
+.pos__address {
+  text-align: start;
+}
+
+.pos__city {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pos__street {
+  font-size: 14px;
+}
+
+.pos__panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 10px;
+}
+
+.pos__panel--space {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pos__open > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pos__days {
+  margin-right: 5px;
+}
+
+.pos__link {
+  color: #f29400;
+  text-decoration: none;
+}
+
+.pos__link:hover {
+  text-decoration: underline;
+}
+
+.pos__button {
+  text-align: right;
+  flex-basis: 100%;
+}
+
+.pos__more {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #3c3c3c;
+  color: #fff;
+  padding: 7px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.pos__more:hover {
+  text-decoration: underline;
+}
+
+.legend__row {
+  display: flex;
+  align-items: center;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend__pin {
+  margin-right: 10px;
+  height: 20px;
+}
+
+/* styling Callcenter  */
+.callcenter__image{
+    text-align: center;
+    margin-top:50px;
+}
+
+.callcenter__numbers{
+    background: #fff;
+    padding:20px 10px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.callcenter__contact{
+    font-size:30px;
+}
+
+.callcenter__contact:first-child{
+    margin-bottom:20px;
+}
+
+.callcenter__subtitle{
+    margin:0;
+}
+
+.callcenter__link{
+    color:#f29400;
+    text-decoration: none;
+}
